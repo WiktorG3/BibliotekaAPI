@@ -1,0 +1,15 @@
+using System.Text.Json.Serialization;
+
+namespace BibliotekaAPI.DTOs
+{
+    public class CreateAuthor
+    {
+        public int Id { get; set; }
+
+        [JsonPropertyName("first_name")]
+        public string FirstName { get; set; } = "";
+
+        [JsonPropertyName("last_name")]
+        public string LastName { get; set; } = "";
+    }
+}
